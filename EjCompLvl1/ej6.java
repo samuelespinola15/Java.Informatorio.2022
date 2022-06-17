@@ -1,0 +1,25 @@
+package EjCompLvl1;
+import java.util.Scanner;
+public class ej6 {
+    static int numero1;
+    static int numero2;
+
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Ingrese dos valores enteros para luego dar el resultado de la potencia ");
+        numero1 = scan.nextInt();
+        numero2 = scan.nextInt();
+        scan.close();
+
+        potencia(numero1,numero2);
+    }
+
+    public static void potencia(int num1, int num2) {
+        int resultado = num1;
+        for (int i = 1; i<num2; i++){
+            resultado = resultado * num1;
+        }
+        System.out.println("El resultado de la potencia es : " + resultado);
+
+    }
+}
